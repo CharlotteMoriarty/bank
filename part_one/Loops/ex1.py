@@ -7,9 +7,9 @@ while user_shoot == 1:
 
     if len(user_guess) > 5:
         print("To long word, hidden word got only 5 letter")
+
     if len(user_guess) == 5:
 
-        # correct letter in good spot
         guess_word = user_guess
         for letter in range(0, len(correct_word)):
 
@@ -17,10 +17,7 @@ while user_shoot == 1:
                 current_pass = ("[", user_guess[letter], "]")
                 current_pass = "".join(current_pass)
                 guess_word[letter] = current_pass
-
-                # user_shoot = 1
-
-        # print(current_pass)
+                user_shoot = 1
 
         for letter in range(0, len(correct_word)):
             for another_letter in range(0, len(correct_word)):
@@ -28,4 +25,6 @@ while user_shoot == 1:
                     another_pass = ("(", user_guess[letter], ")")
                     another_pass = "".join(another_pass)
                     guess_word[letter] = another_pass
+
         print(guess_word)
+
