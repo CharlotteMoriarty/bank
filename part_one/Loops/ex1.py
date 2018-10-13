@@ -27,4 +27,7 @@ while user_shoot == 1:
                     guess_word[letter] = another_pass
 
         print(guess_word)
-
+        word = ["[t]", "[i]", "[g]", "[e]", "[r]"]
+        if guess_word == word:
+            user_shoot = 2
+            print("Winner")
