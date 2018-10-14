@@ -38,7 +38,7 @@ def translator_english_to_swedish(english_words):
 
 
 card = input("Write your christmas card: ")
-translator_english_to_swedish(card)
+#translator_english_to_swedish(card)
 
 print(translator_english_to_swedish(card))
 
