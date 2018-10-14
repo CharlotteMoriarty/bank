@@ -29,7 +29,7 @@ def translator_english_to_swedish(english_words):
 
 def english_swedish():
     translator_version = input("Write A for single word translation or B for sentence translation")
-    if translator_version == "A" :
+    if translator_version == "A":
         lexicon()
     elif translator_version == "B":
         card = input("Write your christmas card: ")
